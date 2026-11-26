@@ -1,0 +1,16 @@
+.git
+.env
+.env.*
+!.env.example
+.venv
+__pycache__
+.pytest_cache
+runtime/*
+server/certs/*
+*.pem
+*.key
+*.crt
+*.sqlite3
+*.jsonl
+.client-session
+outputs

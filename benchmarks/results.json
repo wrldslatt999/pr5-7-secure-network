@@ -1,0 +1,63 @@
+{
+  "timestamp_utc": "2026-11-26T19:09:08.361558+00:00",
+  "python": "3.14.10",
+  "os": "Linux-7.2.15+kali-amd64-x86_64-with-glibc2.43",
+  "topology": "local loopback; separate HTTP/HTTPS listeners, not Docker",
+  "methodology": "new connection per request (TLS handshake included), sequential requests, no auth, verified CA, per-request response equality",
+  "rows": [
+    {
+      "transport": "HTTP",
+      "payload_bytes": 16,
+      "requests": 10,
+      "median_ms": 1.2797,
+      "p95_ms": 1.4825,
+      "mean_ms": 1.2989,
+      "requests_per_second": 769.18
+    },
+    {
+      "transport": "HTTPS",
+      "payload_bytes": 16,
+      "requests": 10,
+      "median_ms": 6.8862,
+      "p95_ms": 7.7278,
+      "mean_ms": 7.0393,
+      "requests_per_second": 142.04
+    },
+    {
+      "transport": "HTTP",
+      "payload_bytes": 1024,
+      "requests": 10,
+      "median_ms": 1.0879,
+      "p95_ms": 1.6203,
+      "mean_ms": 1.1835,
+      "requests_per_second": 844.43
+    },
+    {
+      "transport": "HTTPS",
+      "payload_bytes": 1024,
+      "requests": 10,
+      "median_ms": 7.1935,
+      "p95_ms": 8.4757,
+      "mean_ms": 7.3339,
+      "requests_per_second": 136.33
+    },
+    {
+      "transport": "HTTP",
+      "payload_bytes": 2048,
+      "requests": 10,
+      "median_ms": 1.3675,
+      "p95_ms": 2.0396,
+      "mean_ms": 1.4547,
+      "requests_per_second": 687.01
+    },
+    {
+      "transport": "HTTPS",
+      "payload_bytes": 2048,
+      "requests": 10,
+      "median_ms": 6.8588,
+      "p95_ms": 7.2332,
+      "mean_ms": 6.7631,
+      "requests_per_second": 147.84
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Runtime intentionally uses Python standard library only (Python >=3.11).
+# No external Python packages are required.
